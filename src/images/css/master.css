@@ -4,81 +4,90 @@
 /* Styles */
 body {
     background: linear-gradient(to top, #738678, #2c332e);
-    &.emmet{
+
+    &.emmet {
         background: linear-gradient(to top, #7acb16, #192a05);
         color: #baffa9aa;
     }
-        main{
-            header.mmenu {
-                hl {
-                    border-bottom: 2px solid #baffa933;
-                }
 
-                 img {
-                    border: 4px solid #baffa933
-                 }
-                }
+    main {
+        header.mmenu {
+            hl {
+                border-bottom: 2px solid #baffa933;
+            }
+
+            img {
+                border: 4px solid #baffa933
             }
         }
-section 
-    h2.subtitle {
-        background-color: #707070
-        color: #0009;
-        font-weight: 500;
-        justify-content: space-between;
-        padding: 0.4rem;
-        span{
-            aling-items: center;
-            background-color: #0009;
-            border-radius: 50%;
-            color: #000;
-            display: flex;
-            height: 30px;
-            justify-content: center;
-            width: 30px;
-        }
-        } 
-        small {
-            color: #666;
-        }
-        h3 {
-            margin: 0;
-            border-bottom: 1px dotted #239e9eaa;
-        }
-        p{
-            color: #fff9;
-            font-size: 1.2rem;
+    }
+}
 
-        }
-        xmp {
-            background-color: #000;
-            border-radius: 8px;
-            color: #000;
-            padding: 0.4rem;
-        }
-    
-        
-    
+section h2.subtitle {
+    background-color: #707070;
+    color:#000 #0009;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 0.4rem;
 
-         nav .goback {
-            aling-items: center;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            display: flex;
-            justify-content: center;
-            left: 6px;
-            opacity: .6;
-            position: fixed;
-            top: 6px;
-            transition: all 0.4s ease-in;
-            width: 40px;
-            &:hover {
-                opacity: .9;
-                transform: scale(1.1);
-                
+    span {
+        aling-items: center;
+        background-color: #0009;
+        border-radius: 50%;
+        color: #000;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        width: 30px;
+    }
+}
 
-            
-           }    
+small {
+    color: #666;
+}
+
+h3 {
+    margin: 0;
+    border-bottom: 1px dotted #239e9eaa;
+}
+
+p {
+    color: #fff9;
+    font-size: 1.2rem;
+
+}
+
+xmp {
+    background-color: #000;
+    border-radius: 8px;
+    color: #000;
+    padding: 0.4rem;
+}
+
+
+
+
+nav .goback {
+    aling-items: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    left: 6px;
+    opacity: .6;
+    position: fixed;
+    top: 6px;
+    transition: all 0.4s ease-in;
+    width: 40px;
+
+    &:hover {
+        opacity: .9;
+        transform: scale(1.1);
+
+
+
+    }
+
     color: #fff9;
     font-family: Poppins;
     min-height: 100dvh;
