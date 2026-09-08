@@ -4,260 +4,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01-Emeettitle>
-        <link rel="stylesheet" href="../master.css">
+    <title>01-emmet</title>
+    <link rel="stylesheet" href="../master.css">
 </head>
 
 <body class="emmet">
     <nav class="goback">
         <a href="../index.html">
-            HOME
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path
+                    d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z">
+                </path>
+            </svg>
         </a>
     </nav>
-    <Main>
-        <HEADER class="mmenu">
-            <H1>01-Emeet</H1>
-            <H2>TGO plugin for faster HTML and CSS coding.</H2>
-            <img src="src/images/noche.webp" alt="My profile">
-        </HEADER>
+    <main>
+        <header class="mmenu">
+            <h1>01-emmet</h1>
+            <h2>Plugin for faster HTML and CSS coding</h2>
+            <img src="../src/images/logo-emmet.svg" alt="Emmet">
+        </header>
         <section>
             <h2 class="subtitle">
-                01-child
+                01-Child
                 <span> > </span>
-            </h2> 
-            <small> creates child elements (nesting).</small>
-            <h3>Example: </h3>       
-            <p><ul>li>a ↔️</p>
-            <h3>Result: </h3>
+            </h2>
+            <small>Creates child elements (nesting).</small>
+            <h3>Example</h3>
+            <p>ul>li>a ↔️</p>
+            <h3>Result</h3>
 <xmp><ul>
     <li>
         <a href=""></a>
     </li>
 </ul></xmp>
-        </section>
-        
 
-     <section>
+        </section>
+        <section>
             <h2 class="subtitle">
                 02-Sibling
                 <span> > </span>
-            </h2> 
-            <small> creates sibling elements .</small>
-            <h3>Example: </h3>       
+            </h2>
+            <small>Creates sibling elements.</small>
+            <h3>Example</h3>
             <p>header+section+footer ↔️</p>
-            <h3>Result: </h3>
+            <h3>Result</h3>
 <xmp><header></header>
-    <section></section>
-    <footer></footer></xmp>
-            </section> 
+<section></section>
+<footer></footer></xmp>
 
-    <li>
-        <a href=""><</a>
-    </li>
-</ul></xmp>
+        </section>
+    
+        <section>
+            <h2 class="subtitle">
+                03-Multiplication
+                <span> > </span>
+            </h2>
+            <small>Repeats elements multiple times.</small>
+            <h3>Example</h3>
+            <p>ul>li*3 ↔️</p>
+            <h3>Result</h3>
+<xmp><ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                04-Class
+                <span> > </span>
+            </h2>
+            <small>Creates a class attribute.</small>
+            <h3>Example</h3>
+            <p>div.important </p>
+            <p>danger↔️</p>    
+            <h3>Result</h3>
+<xmp><div class="important"></div>
+<div class="danger"></div>
+</xmp>
+        </section>
+         <section>
+            <h2 class="subtitle">
+                05-Clases
+                <span> > </span>
+            </h2>
+            <small>Creates multiple class attributes.</small>
+            <h3>Example</h3>
+            <p>div.clase1.clase2.clasen ↔️</p>
+            <h3>Result</h3>
+<xmp><div class="clase1 clase2 clasen"></div>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                06-Id
+                <span> > </span>
+            </h2>
+            <small>Creates an ID attribute.</small>
+            <h3>Example</h3>
+            <p>nav#menu ↔️</p>
+            <h3>Result</h3>
+<xmp><nav id="menu"></nav>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+                07-Text
+                <span> {} </span>
+            </h2>
+            <small>Inserts text content.</small>
+            <h3>Example</h3>
+            <p>div{lorem ipsum Dolor}↔️</p>
+            <p>a{click aqui} ↔️</p>
+            <h3>Result</h3>
+<xmp><div>lorem ipsum Dolor</div>
+<a href="">click aqui</a>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+               08-Custom Attribute
+                <span> [] </span>
+            </h2>
+            <small>Creates custom attributes.</small>
+            <h3>Example</h3>
+            <p>a[href=www.google.com]↔️</p>
+            <h3>Result</h3>
+<xmp><a href="www.google.com"></a>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+               09-Item Numbering
+                <span> $ </span>
+            </h2>
+            <small>Adds consecutive numbers.</small>
+            <h3>Example</h3>
+            <p> ul>li.num$*3 ↔️</p>
+            <p>section>article.sec$$$*3 ↔️</p>
+            <h3>Result</h3>
+<xmp><ul>
+    <li class="num1"></li>
+    <li class="num2"></li>
+    <li class="num3"></li>
+</ul>
+<section>
+    <article class="sec001"></article>
+    <article class="sec002"></article>
+    <article class="sec003"></article>
+</section>
+</xmp>
+        </section>
+         <section>
+            <h2 class="subtitle">
+               10-Reverse Numbering
+                <span> @ </span>
+            </h2>
+            <small>Inverts numbering order.</small>
+            <h3>Example</h3>
+            <p> ul>li.num$@-*3 ↔️</p>
+            <h3>Result</h3>
+<xmp><ul>
+    <li class="num3"></li>
+    <li class="num2"></li>
+    <li class="num1"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+               11-Base Numbering
+                <span> @n </span>
+            </h2>
+            <small>Defines a base number for sequences.</small>
+            <h3>Example</h3>
+            <p> ul>li.num$@3*4 ↔️</p>
+            <h3>Result</h3>
+<xmp><ul>
+    <li class="num3"></li>
+    <li class="num4"></li>
+    <li class="num5"></li>
+    <li class="num6"></li>
+</ul>
+</xmp>
+        </section>
+        <section>
+            <h2 class="subtitle">
+               12-Climb Up
+                <span> ^ </span>
+            </h2>
+            <small>Moves up one level.</small>
+            <h3>Example</h3>
+            <p> section>article>div^p ↔️</p>
+            <h3>Result</h3>
+<xmp><section>
+    <article>
+        <div></div>
+    </article>
+    <p></p>
+</section>
+</xmp>
         </section>
 
-          <section>
+        <section>
             <h2 class="subtitle">
-                03-multiplication
-                <span> * </span>
-            </h2> 
-            <small> creates sibling multiple times .</small>
-            <h3>Example: </h3>       
-            <p><ul>li*3 ↔️</p>
-            <h3>Result: </h3>
-<xmp><ul>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul></xmp>    
-
-            </section> 
-
-             <section>
-            <h2 class="subtitle">
-                04-class
-                <span> . </span>
-            </h2> 
-            <small> creaters a class atribute .</small>
-            <h3>Example: </h3>       
-            <p>div.importan ↔️</p>
-            <p>div.danger ↔️</p>
-            <h3>Result: </h3>
-<xmp><div class="important"></div>
-<div class="danger"></div></xmp>       
-
-            </section>
-
-            <section>
-            <h2 class="subtitle">
-                05-Classes
-                <span> ... </span>
-            </h2> 
-            <small> creates  multiple class attributes .</small>
-            <h3>Example: </h3>       
-            <p>div.red.green.blue ↔️</p>
-            <h3>Result: </h3>
-<xmp><div class="red green blue"></div></xmp>   
-
-            </section> 
-
-             <section>
-            <h2 class="subtitle">
-                06-Identification
-                <span> # </span>
-            </h2> 
-            <small> creates an ID attribute .</small>
-            <h3>Example: </h3>       
-            <p>menu#cod123 ↔️</p>
-            <h3>Result: </h3>
-<xmp><menu id="codi123"></menu></xmp>
-
-            </section> 
-
-             <section>
-            <h2 class="subtitle">
-                07-tex
-                <span>  {} </span>
-            </h2> 
-            <small> Inserts text content .</small>
-            <h3>Example: </h3>       
-            <p>p{lorem ipsum dolor} ↔️</p>
-            <p>a{Click Here} ↔️</p>
-            <h3>Result: </h3>
-<xmp><p>lorem ipsum dolor</p>
-<a href="">Click Here</a></xmp>    
-
-            </section> 
-
-             <section>
-            <h2 class="subtitle">
-                08-custom Attributes
-                <span>  [] </span>
-            </h2> 
-            <small> Inserts text content .</small>
-            <h3>Example: </h3>       
-            <p>input[type=number] ↔️</p>
-            <p>a{Click Here} ↔️</p>
-            <h3>Result: </h3>
-<xmp><input type="number"></xmp> 
-
-            </section>
-
-             <section>
-            <h2 class="subtitle">
-                09-Item Numbering
-                <span>  $ </span>
-            </h2> 
-            <small> Adds consecutive numbers .</small>
-            <h3>Example: </h3>       
-            <p><ul>li.option$$*3 ↔️</p>
-            <h3>Result: </h3>
-<xmp><ul>
-    <li class="option01"></li>
-    <li class="option02"></li>
-    <li class="option03"></li>
-</ul></xmp>    
-
-            </section> 
-            <section>
-            <h2 class="subtitle">
-                10-Reverse Numering
-                <span> @ </span>
-            </h2> 
-            <small> Inverts numbering order .</small>
-            <h3>Example: </h3>       
-            <p><ul>li.num$@-*3 ↔️</p>
-            <h3>Result: </h3>
-<xmp><ul
-    <li class="num3"></li>
-    <li class="num2"></li>
-    <li class="num2"></li>
-    <ul><xmp>
-
-
-            </section>
-
-            <section>
-            <h2 class="subtitle">
-                11-Base Numering
-                <span> > @n </span>
-            </h2> 
-            <small> Defines a base number for sequences .</small>
-            <h3>Example: </h3>       
-            <p><ul>li.num$@3*4 ↔️</p>
-            <h3>Result: </h3>
-<xmp><ul>
-    <li class="num3"></li>
-    <li class="num3"></li>
-    <li class="num3"></li>
-    <li class="num3"></li>
-    
-    
-</ul></xmp>    
-
-            </section> 
-
-             <section>
-            <h2 class="subtitle">
-                12-Clim up
-                <span>  ^ </span>
-            </h2> 
-            <small> Moves up one level .</small>
-            <h3>Example: </h3>       
-            <p><ul>section>article>div^p ↔️</p>
-            <h3>Result: </h3>
-<xmp><section>
-   <article>
-<div></div>
-</article>
-<p></p>
-   
-
-            </section> 
-            
-             <section>
-            <h2 class="subtitle">
-                13-grouping
-                <span>  () </span>
-            </h2> 
-            <small> groups elements together .</small>
-            <h3>Example: </h3>       
-            <p>(header>nav) ↔️</p>
-            <p>(section>articicle)</p>
-            <h3>Result: </h3>
+               13-Grouping
+                <span> () </span>
+            </h2>
+            <small>Groups elements together. </small>
+            <h3>Example</h3>
+            <p> (header>nav)(section>article) ↔️</p>
+            <h3>Result</h3>
 <xmp><header>
     <nav></nav>
-    </header>
-    <section>
-        <articicle></articicle>
+</header>
+<section>
+    <article></article>
+</section>
+</xmp>
         </section>
-        </xmp>
-
-    </section>
-
-      </section> 
-            
-             <section>
+        <section>
             <h2 class="subtitle">
-                14-lorem
-                <span> lorem </span>
-            </h2> 
-            <small> generates placeholder text .</small>
-            <h3>Example: </h3>       
-            <p>lorem ↔️</p>
-            <p>lorem20</p>
-            <p>lorem*5</p>
-            <h3>Result: </h3>
+               14-Lorem
+                <span style="font-size: 0.5rem;"> lorem </span>
+            </h2>
+            <small>Generates placeholder text.  </small>
+            <h3>Example</h3>
+            <p> lorem↔️</p>
+            <p> lorem20↔️</p>
+            <p> lorem*5↔️</p>
+            <h3>Result</h3>
 <xmp>lorem
-        </xmp>
-
-
-            </section>
-             <section>
+</xmp>
+        </section>
+       <section>
             <h2 class="subtitle">
                15-HTML
-                <span> HTML </span>
+                <span style="font-size: 0.5rem;"> HTML </span>
             </h2>
             <small>Creates various HTML document types.</small>
             <h3>Example</h3>
@@ -277,7 +262,7 @@
         <section>
             <h2 class="subtitle">
                16-Meta tags
-                <span style="font-size: 0.5rem;"> meta</span>
+                <span style="font-size: 0.5rem;" > Meta </span>
             </h2>
             <small>Generates meta tags.</small>
             <h3>Example</h3>
@@ -287,39 +272,33 @@
     initial-scale=1.0">
 </xmp>
         </section>
-         <section>
+        <section>
             <h2 class="subtitle">
-               17-challenge
-                <span> 🚀 </span>
+               17-Challenge
+                <span style="font-size: 0.5rem;" > 🚀 </span>
             </h2>
-            <small>Generates emmet challenges for practice.</small>
+            <small>Generates emmet Challenge for practice</small>
             <h3>Example</h3>
-            <p>header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>button[type="button"].navbar-toggle>span.sr-only{Toggle navigation}+span.icon-bar*3^a.navbar-brand[href="index.php"]>img[src="imgs/logo.png" alt=""])+(div.collapse>ul.nav.navbar-nav>(li>a.link[href="index.html"]{inicio})+(li.ative>a[href="login.html"]{ingresar})+(li>a.link[href="registro.html"]{registrarse})+(li>a.link[href="contacto.html"]{contacto})) ↔️</p>
+            <p style="font-size: 0.5rem;">header#header>nav.navbar.navbar-inverse>div.container>div.navbar-header>button[type="button" data-toggle="collapse" data-target="#nav-bar"].navbar-toggle>span.sr-only{Abrir navegacion}+span.icon-bar*3^a.navbar-brand[href="index.php"]>img[src="imgs/logo-site.png" alt=""]^^div#nav-bar.collapse.navbar-collapse>ul.nav.navbar-nav>li>a.nav-item[href="index.html"]{Inicio}^li.active.nav-item>a[href="login.html"]{Ingresar}^li>a.nav-item[href="registro.html"]{Registrarse}^li>a.nav-item[href="contacto.html"]{Contacto}↔️</p>
             <h3>Result</h3>
-<xmp>
-    <header id="header">
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header"><button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.php" class="navbar-brand"><img src="imgs/logo.png" alt=""></a></div>
-                <div class="collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html" class="link">inicio</a></li>
-                        <li class="ative"><a href="login.html">ingresar</a></li>
-                        <li><a href="registro.html" class="link">registrarse</a></li>
-                        <li><a href="contacto.html" class="link">contacto</a></li>
-                    </ul>
-                </div>
+<xmp style="font-size: 0.5rem;"><header id="header">
+    <nav class="navbar-inverse">
+        <div class="container">
+            <div class="navbar-header"><button class="navbar-toggle"><span class="sr-only">Toogle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.php" class="navbar-brand"><img src="imags/logo.png" alt="Logo"></a></div>
+            <div class="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="link">Inicio</a></li>
+                    <li class="active link"><a href="Login.html">Ingresar</a></li>
+                    <li><a href="registro.html" class="link">Registrarse</a></li>
+                    <li><a href="contacto.html" class="link">Contacto</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 </xmp>
         </section>
-    
-        </menu>
-    </Main>
-    
-    
-       
+    </main>
 </body>
 
 </html>
