@@ -13,25 +13,30 @@ body {
         background: linear-gradient(to top, #e44d26, #1f0a05);
         background-attachment: fixed;
         color: #f9966baa;
+
         main {
             header.mmenu {
                 h1 {
                     border-bottom: 2px solid #f9966baa;
                 }
+
                 img {
                     border: 4px solid #f9966baa;
                 }
             }
-           menu.mmenu {
+
+            menu.mmenu {
                 a:is(:link, :visited) {
                     &:hover {
                         background-color: #e44d26;
+
                         aside {
                             h4 {
                                 color: #fff9;
                             }
                         }
                     }
+
                     span {
                         background-color: #e44d26;
                         height: 50px;
@@ -39,13 +44,14 @@ body {
                         width: 50px;
                         color: #fff9;
                     }
+
                     aside {
                         h4 {
                             font-size: 1.2rem;
                         }
                     }
                 }
-           } 
+            }
         }
     }
 
@@ -59,10 +65,12 @@ body {
                 h1 {
                     border-bottom: 2px solid #baffa9aa;
                 }
+
                 img {
                     border: 4px solid #baffa933;
                 }
             }
+
             section {
                 h2.subtitle {
                     align-items: center;
@@ -74,6 +82,7 @@ body {
                     justify-content: space-between;
                     margin: 0;
                     padding: 0.4rem;
+
                     span {
                         align-items: center;
                         background-color: #0009;
@@ -86,17 +95,21 @@ body {
                         width: 30px;
                     }
                 }
+
                 small {
                     color: #fff9;
                 }
+
                 h3 {
                     margin: 0;
                     border-bottom: 1px dotted #baffa9aa;
                 }
+
                 p {
                     color: #fff9;
                     font-size: 1.2rem;
                 }
+
                 xmp {
                     background-color: #0009;
                     border-radius: 8px;
@@ -120,10 +133,14 @@ body {
         top: 6px;
         transition: all 0.4s ease-in;
         width: 40px;
-        &:hover {
-            opacity: .9;
-            transform: scale(1.1);
+
+        a:is(:link, :visited) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        &:hover {}
     }
 
     main {
@@ -140,17 +157,30 @@ body {
         header.mmenu {
             text-align: center;
 
+            &.internal {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                img {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+
             h1 {
                 font-size: 3rem;
                 font-weight: 200;
                 border-bottom: 2px solid #eddcb9aa;
                 margin: 0;
             }
+
             h2 {
                 font-size: 1.2rem;
                 font-weight: 500;
                 margin: 0;
             }
+
             img {
                 margin: 2rem auto;
                 border: 4px solid #eddcb933;
@@ -159,16 +189,19 @@ body {
                 height: 280px;
                 width: 280px;
             }
+
             h3 {
                 font-size: 1.2rem;
                 font-weight: 600;
                 margin: 0;
             }
+
             h4 {
                 font-size: 0.94rem;
                 font-weight: 200;
                 margin: 0;
             }
+
             h5 {
                 font-size: 1rem;
                 font-weight: 400;
@@ -178,10 +211,22 @@ body {
 
         section {
             background-color: #0009;
+            ;
             border-radius: 8px;
             padding: 0.6rem;
-            margin: 1rem auto;
-            width: 360px;
+            min-height: 240px;
+            width: 380px;
+
+            h3.subtitle {
+                font-weight: 500;
+                border-bottom: 0.4rem;
+                border-bottom: 2px dotted #fff9;
+            }
+
+            p {
+                color: #fff9;
+                text-align: justify;
+            }
         }
 
         menu.mmenu {
@@ -192,7 +237,7 @@ body {
             margin: 2rem auto;
             gap: 0.6rem;
             justify-content: center;
-            
+
             a:is(:link, :visited) {
                 background-color: #0009;
                 border-radius: 5rem;
@@ -241,16 +286,18 @@ body {
                     margin-left: 0.6rem;
                     flex-direction: column;
                     align-items: start;
+
                     h4 {
                         font-size: 1.6rem;
                         font-weight: 500;
                         margin: 0;
                     }
+
                     small {
                         font-size: 0.6rem;
                         color: #fff;
                     }
-                } 
+                }
             }
         }
     }
