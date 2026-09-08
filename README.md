@@ -2,6 +2,7 @@
 ## darlyn llurany velez osorio
 ### Analisis y desarrollo de software
 ![profile picture](src/images/darlin.jpeg)
+
 ***centro de procesos industriales y construccion*** 
  >SENA - Regional Caldas 
 ---
