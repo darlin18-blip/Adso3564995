@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>26-border-radius</title>
     <link rel="stylesheet" href="../master.css">
+    <style>
+        section {
+            div:not(.versus) {
+                background-color: #caa0f5aa;
+                border: 2px solid #fff9;
+                height: 200px;
+                margin: 2rem auto;
+                width: 200px;
+
+                &.bradius1 {
+                    border-radius: 50%;
+                }
+                &.bradius2 {
+                    border-radius: 40px 0;
+                }
+                &.bradius3 {
+                    border-radius: 140px 0 0 140px;
+                }
+                &.bradius4 {
+                    border-radius: 140px 0 140px 140px;
+                }
+                &.bradius5 {
+                    border-radius: 50px;
+                }
+
+            }
+            div.versus {
+                div {
+                    border-radius: 40px;
+                    display: inline-block;
+                    height: 150px;
+                    width: 150px;
+                    &.bradius6 {
+                        margin-left: 2.6rem;
+                        corner-shape: squircle;
+                    }
+                }
+            }
+        }
+    </style>
 </head>
 <body class="css">
     <nav class="goback">
@@ -31,26 +71,16 @@
             <h3 class="subtitle">border-radius: 140px 0 140px 140px</h3>
             <div class="bradius4"></div>
             <h3 class="subtitle">corner-shape: squircle</h3>
-            <div class="bradius5"></div>
-        </section>
-
-
-
-<section>
-            <h3 class="subtitle">box-shadow: 0 0 12px #fff</h3>
-            <div class="box box1"></div>
-            <h3 class="subtitle">box-shadow: -10px -10px 24px 0 #fff</h3>
-            <div class="box box2"></div>
-            <h3 class="subtitle">box-shadow: 0 0 20px #fff inset</h3>
-            <div class="box box3"></div>
-            <h3 class="subtitle">box-shadow: multiple</h3>
-            <div class="box box4"></div>
-            <h3 class="subtitle">box-shadow VS drop-shadow()</h3>
-            <div class="images">
-                <img src="imgs/mario.png">
-                <img src="imgs/mario.png">
+            <div class="versus">
+                <div class="bradius5"></div>
+                <div class="bradius6"></div>
             </div>
+            
         </section>
+
+
+
+
     </main>
 </body>
 </html>
