@@ -1,207 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>39-challenge-responsive</title>
+    <title>39 - Challenge: Responsive Design</title>
+    
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
         * {
+            box-sizing: border-box;
             transition: all 0.4s ease;
         }
+
         body {
-            background: url(imgs/imagen5.png) no-repeat center / cover;
+            background: url(imgs/imagen1.png) no-repeat center / cover;
             color: #fff;
-            font-family: sans-serif;
+             font-family: "Indie Flower", cursive;
+            font-weight: 400;
+            font-style: normal;
             padding: 0;
             margin: 0;
-
-            main {
-                border: 10px solid #fff;
-                padding: 1rem;
-                margin: 2rem auto;
-                width: 1228px; /* 1280 - (20px +32px) */
-
-                header {
-                    figure.logo {
-                        background: url(imgs/imagen2.png) no-repeat center;
-                        padding: 0;
-                        height: 354px;
-                        margin: 0 auto;
-                        width: 919px;
-                    }
-
-                    menu {
-                        margin: 0;
-                        padding: 0;
-
-                        a:is(:link, :visited) {
-                            background: url(imgs/imagen4.png) no-repeat center / cover;
-                            color: #fff;
-                            font-size: 1.2rem;
-                            padding: 1.4rem 1rem;
-                            display: inline-block;
-                            text-align: center;
-                            text-decoration: none;
-                            width: 243px;
-                            height: 243px;
-                            border-radius: 2rem;
-                            margin: 0.3rem;
-                            border: 6px solid white;
-
-                            &:nth-of-type(2){
-                                background: url(imgs/imagen3.png) no-repeat center / cover;
-                            }
-                            &:nth-of-type(3) {
-                                background: url(imgs/imagen7.png) no-repeat center / cover;
-                            }
-                            &:nth-of-type(4) {
-                                background: url(imgs/imagen5.png) no-repeat center / cover;
-                            }
-
-                            &:hover {
-                                background: translateY(10px);
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
-                section {
-                    h2 {
-                        text-align: center;
-                        font-size: 2.8rem;
-
-                        &:nth-of-type(2),
-                        &:last-of-type {
-                            display: none; 
-                        }
-                    }
-                    div.left {
-                        background: url(imgs/imagen8.png) no-repeat center;
-                        width: 300px;
-                        height: 300px;
-                        background-position: 0px;
-                        background-size: 20rem;
-                        
-                    }
-                    div.frio {
-                        background: url(imgs/imagen9.png) no-repeat center / cover;
-                        width: 300px;
-                        height: 300px;
-                        background-position: 0px;
-                        background-size: 20rem;
-                    }
-
-                    p {
-                        line-height: 1.8rem;
-                        text-align: justify;
-                    }
-                }
-            }
         }
 
-        /* Media Queries */
+        main {
+            padding: 1rem;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1260px;
+        }
 
-        /* Breakpoint: 1288px */
+        header {
+            text-align: center;
+        }
+
+        figure.logo {
+            background: url(imgs/imagen3.png) no-repeat center / contain;
+            padding: 0;
+            height: 370px;
+            margin: 0 auto;
+            width: 612px;
+        }
+
+
+        menu {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        menu a:link,
+        menu a:visited {
+            background: url(imgs/imagen5.png) no-repeat center / cover;
+            color: #f00;
+            text-decoration: none;
+            font-size: 1.8rem;
+            padding: 1.4rem 1rem;
+            display: inline-block;
+            text-align: center;
+            vertical-align: top;
+            width: 23%;
+            height: 243px;
+            border-radius: 2rem;
+            margin: 0.5rem;
+            border: 6px solid white;
+        }
+
+        menu a:nth-of-type(2) {
+            background: url(imgs/imagen6.png) no-repeat center / cover;
+        }
+
+        menu a:nth-of-type(3) {
+            background: url(imgs/imagen7.png) no-repeat center / cover;
+        }
+
+        menu a:nth-of-type(4) {
+            background: url(imgs/imagen2.png) no-repeat center / cover;
+        }
+
+        menu a:hover {
+            transform: translateY(10px);
+            color: #000;
+            font-weight: bold;
+            font-size: 3rem;
+            text-shadow: 2px 2px 2px #000;
+            box-shadow: 0 0 20px #f00;
+        }
+
+        section {
+            width: 100%;
+            margin: 2rem auto;
+        }
+
+        article {
+            display: block;
+            width: 100%;
+            min-height: 280px;
+            background: #263238;
+            color: white;
+            overflow: hidden;
+            margin: 2rem auto;
+            border-radius: 1.4rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+
+
+        article img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 28%;
+            height: 250px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+
+
+        .contenido {
+            display: inline-block;
+            vertical-align: middle;
+            width: 68%;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        article h3 {
+            color: #fff;
+            font-size: 35px;
+            margin: 0 0 1rem;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 1rem;
+        }
+
+        article p {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+
+
+        section:first-of-type article {
+            box-shadow: 0 0 40px 0 rgb(0, 132, 255);
+        }
+
+        /* BREAKPOINT: 1288px */
 
         @media (max-width: 1288px) {
-            body {
-                main {
-                    width: 800px;
 
-                    header {
-                        figure.logo {
-                            background: url(imgs/imagen6.png) no-repeat center;
-                            height: 370px;
-                            width: 612px;
-                            border: 0.3rem solid white;
-                        }
-
-                        menu {
-                            a:is(:link, :visited) {
-                                width: 324px;
-                            }
-                        }
-                    }
-
-                    section {
-                        h2 {
-                            &:first-of-type {
-                                display: none;
-                            }
-                            &:nth-of-type(2) {
-                                display: block;
-                            }
-                        }
-                    }
-                }
+            main {
+                max-width: 832px;
             }
+
+            figure.logo {
+                background: url(imgs/imagen2.png) no-repeat center / cover;
+                height: 320px;
+                width: 322px;
+            }
+
+            menu a:link,
+            menu a:visited {
+                width: 40%;
+            }
+
         }
 
-        
-        /* Breakpoint: 860px */
 
         @media (max-width: 860px) {
-            body {
-                main {
-                    width: 360px;
 
-                    header {
-                        figure.logo {
-                            background: url(imgs/imagen1.png) no-repeat center;
-                            height: 360px;
-                            width: 360px;
-                        }
-
-                        menu {
-                            a:is(:link, :visited) {
-                                display: block;
-                                margin-bottom: 0.8rem;
-                                width: 330px;
-                            }
-                        }
-                    }
-
-                    section {
-                        h2 {
-                            &:nth-of-type(2) {
-                                display: none;
-                            }
-                            &:last-of-type {
-                                display: block;
-                            }
-                        }
-                    }
-                }
+            main {
+                width: 100%;
+                max-width: 400px;
+                padding: 0.8rem;
             }
+
+            figure.logo {
+                background: url(imgs/imagen4.png) no-repeat center / contain;
+                height: 360px;
+                width: 100%;
+            }
+
+
+            menu a:link,
+            menu a:visited {
+                display: inline-block;
+                margin: 0.5rem auto;
+                width: 100%;
+                height: 300px;
+            }
+
+
+            article {
+                padding: 1rem;
+                text-align: center;
+                height: auto;
+               
+            }
+
+            article img {
+                display: block;
+                width: 220px;
+                max-width: 100%;
+                height: 220px;
+                margin: 0 auto 1rem;
+            }
+
+            .contenido {
+                display: inline-block;
+                width: 100%;
+                padding: 0.5rem;
+                text-align: center;
+            }
+
+            article h3 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            article p {
+                font-size: 0.9rem;
+                text-align: justify;
+                line-height: 1.5;
+            }
+
         }
     </style>
 </head>
+
 <body>
+
     <main>
+
         <header>
+
             <figure class="logo"></figure>
+
             <menu>
-                <a href="Noche">Noche</a>
-                <a href="Noche">Noche</a>
-                <a href="Noche">Noche</a>
-                <a href="Noche">Noche</a>
+                <a href="paisaje1">Cielo</a>
+                <a href="paisaje2">Luna roja</a>
+                <a href="paisaje3">Bosque</a>
+                <a href="paisaje4">Árbol</a>
             </menu>
+
         </header>
-        <section>
-         
-            <div class="parent">
-                <div class="left"></div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus eius nesciunt dolorum, illo odit aspernatur ratione non soluta voluptatum obcaecati accusantium ducimus aliquam? Quo laudantium quisquam quas deserunt quia.</p>
-                  
+
+        <section id="paisaje1">
+
+            <article>
+
+                <img src="imgs/imagen5.png" alt="">
+
+                <div class="contenido">
+
+                    <h3>Cielo</h3>
+
+                    <p>
+                        La imagen muestra una hermosa playa nocturna
+                        iluminada por miles de estrellas que brillan
+                        intensamente en el cielo. Las palmeras se alzan
+                        a un costado, mientras las olas del mar acarician
+                        suavemente la arena. El paisaje transmite
+                        tranquilidad, libertad y serenidad. Representa
+                        un lugar perfecto para descansar, reflexionar
+                        y disfrutar de la belleza de la naturaleza.
+                    </p>
+
                 </div>
-            <div class="parent">
-                <div class="frio"></div>
-                <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus eius nesciunt dolorum, illo odit aspernatur ratione non soluta voluptatum obcaecati accusantium ducimus aliquam? Quo laudantium quisquam quas deserunt quia.</p>
-       
-                </div>
+
+            </article>
+
         </section>
+
+        <section id="paisaje2">
+
+            <article>
+
+                <img src="imgs/imagen6.png" alt="">
+
+                <div class="contenido">
+
+                    <h3>Luna roja</h3>
+
+                    <p>
+                        La imagen presenta un paisaje misterioso con
+                        una enorme luna roja que ilumina el horizonte.
+                        Una silueta de árbol solitario destaca sobre
+                        una colina, mientras una pequeña camioneta
+                        recorre el camino. Los colores oscuros y rojizos
+                        crean una atmósfera melancólica y profunda.
+                        La escena transmite soledad, nostalgia,
+                        misterio y una sensación de viaje hacia
+                        lo desconocido.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="paisaje3">
+
+            <article>
+
+                <img src="imgs/imagen7.png" alt="">
+
+                <div class="contenido">
+
+                    <h3>Bosque</h3>
+
+                    <p>
+                        La imagen representa un bosque fantástico
+                        durante una noche iluminada por una brillante
+                        luna. Los árboles, las montañas y las rocas
+                        presentan tonalidades azules y rojizas que
+                        crean un ambiente mágico. Un pequeño río
+                        atraviesa el paisaje, reflejando los colores
+                        del entorno. La escena transmite misterio,
+                        aventura, tranquilidad y la impresionante
+                        belleza de la naturaleza nocturna.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section id="paisaje4">
+
+            <article>
+
+                <img src="imgs/imagen2.png" alt="">
+
+                <div class="contenido">
+
+                    <h3>Árbol</h3>
+
+                    <p>
+                        La imagen muestra un hermoso árbol de hojas
+                        rojizas situado a la orilla de un lago
+                        tranquilo. Su figura se refleja perfectamente
+                        sobre el agua cristalina, creando una
+                        composición armoniosa. Al fondo se observan
+                        montañas y un cielo nocturno con una pequeña
+                        luna. El paisaje transmite paz, equilibrio,
+                        nostalgia y una profunda conexión con
+                        la naturaleza.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
     </main>
+
 </body>
+
 </html>
